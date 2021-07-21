@@ -1,0 +1,34 @@
+.Media {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  padding: 5px;
+  margin: 5px 0px;
+  background-color: rgb(59, 58, 58);
+  border-radius: 20px;
+  position: relative;
+}
+.Media:hover {
+  background-color: white;
+  color: black;
+}
+@media (max-width) {
+  .Media {
+    width: 46%;
+  }
+}
+.poster {
+  border-radius: 20px;
+}
+.title {
+  width: 100%;
+  text-align: center;
+  font-size: 17px;
+  padding: 8px 0;
+}
+.subtitle {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 3px;
+  padding: 0 2px;
+}

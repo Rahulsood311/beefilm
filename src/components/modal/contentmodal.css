@@ -1,0 +1,92 @@
+.contentlandscape{
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.contentpotrait{
+  display: none;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.tagline{
+  padding-bottom: 10px;
+  align-self: center;
+}
+
+.modal{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80%;
+  width: 100%;
+  overflow-y: scroll;
+  scrollbar-width: none;
+
+}
+.modal::-webkit-scrollbar{
+  display: none;
+}
+
+.ContentModal__about{
+  padding: 10px ;
+  width: 95%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-weight: 300;
+}
+
+.ContentModal__title{
+  height: 12%;
+  font-size: 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.ContentModal__description{
+display: flex;
+height: 40%;
+overflow-y: scroll;
+padding: 15px;
+border-radius: 20px;
+box-shadow: inset 0 0 5px black;
+text-align: justify;
+
+}
+
+.ContentModal__description::-webkit-scrollbar{
+display: none;
+}
+
+
+@media(min-width : 835px){
+  .contentlandscape{
+    display: none;
+  }
+  .contentpotrait{
+    display: flex;
+    width: 38%;
+  }
+  .modal{
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 0 ;
+  }
+  .ContentModal__about{
+  width: 58%;
+  padding: 0;
+  height: 100%;
+  }
+  .ContentModal__title{
+    font-size: 3.5vw;
+  }
+  .ContentModal__description{
+    font-size: 22px;
+
+  }
+}
